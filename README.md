@@ -1,13 +1,22 @@
 Academic XeLaTeX Template
 =========================
 
-You should have installed XeLaTeX, it's bundeled with the MacTeX distribution.
+You should have installed XeLaTeX, it's bundeled with the
+[MacTeX](http://tug.org/mactex/) distribution.
 You should have installed Adobe's OpenSource Fonts:
 
   * Source Sans Pro: http://sourceforge.net/projects/sourcesans.adobe/files/
   * Source Code Pro: http://sourceforge.net/projects/sourcecodepro.adobe/files/
 
 You can also use other fonts, but this must be configured!
+
+On Ubuntu/Debian the following packages should be installed:
+
+  * texlive
+  * texlive-bibtex-extra
+  * texlive-lang-german
+  * texlive-latex-extra
+  * texlive-xetex
 
 Make the PDF
 ------------
