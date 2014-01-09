@@ -50,6 +50,8 @@ In this manner you can create Figures or Code folders.
 Cheat Sheet
 -----------
 
+For clarity stick to a maximum count of 80 characters per line.
+
 Formatting fonts:
 
     \emph{Kursiv}
