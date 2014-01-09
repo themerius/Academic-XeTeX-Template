@@ -121,7 +121,15 @@ Formatting Code:
     print "this is a little code snippet"
     \end{verbatim}
 
+    \begin{verbatim*}
+    show spaces explicit
+    \end{verbatim*}
+
     \verb|inline verbatim|
+    \verb+inline verbatim+
+
+    \verb*|inline verbatim|
+    \verb*+inline and show spaces explicit+
 
 http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
 
