@@ -26,7 +26,7 @@
 
 % Language
   \usepackage{polyglossia}
-  \setdefaultlanguage[latesthyphen=true, babelshorthands=true]{german}
+  \setdefaultlanguage[latesthyphen=true]{german}
   \setotherlanguage{english}
 
 % Hyphenation
@@ -56,12 +56,10 @@
     pdfencoding=auto
     pdfstartview=FitH]{hyperref}
   \hypersetup{
-    pdfinfo={
-      Title={\thema},
-      Author={\autor},
-      Subject={\subtitle},
-      Keywords={\keywords}
-    }
+    pdftitle={\thema},
+    pdfauthor={\autor},
+    pdfsubject={\subtitle},
+    pdfkeywords={\keywords}
   }
 
 % Listings
