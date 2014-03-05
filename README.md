@@ -54,8 +54,14 @@ For clarity stick to a maximum count of 80 characters per line.
 
 Formatting fonts:
 
-    \emph{Kursiv}
+    \emph{Emphasized Text}
     {\tt Typewriter}
+    \underline{Underlinded Text}
+    \textit{Italic Text for whole text blocks}
+    \textbf{Bold Text for whole text blocks}
+
+    emph can be used within textit or textbf.
+    emph applies automatically a suitable emphasis.
 
 Quotes:
 
@@ -90,12 +96,14 @@ Formatting Lists:
 Formatting Tables: http://en.wikibooks.org/wiki/LaTeX/Tables
 
     \begin{tabular}{ l | c || r }
-      \hline                        
+      \hline
       1 & 2 & 3 \\
       4 & 5 & 6 \\
       7 & 8 & 9 \\
-      \hline  
+      \hline
     \end{tabular}
+
+    Instead of l using e.g. p{5cm} for automatically linebreak.
 
 Table with captions: http://www.weinelt.de/latex/table.html
 
@@ -136,3 +144,8 @@ http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
     \begin{lstlisting}
     Put your code here.
     \end{lstlisting}
+
+Bibliography
+------------
+
+TODO

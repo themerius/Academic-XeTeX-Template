@@ -17,21 +17,28 @@
 \input{Titlepages/Default}  % Choose one Titlepage (must provide \typesetTitle)
 
 \newcommand{\titlepageAreal}{
+  \pagenumbering{roman}
   \thispagestyle{empty}
   \typesetTitle
   \newpage
   \clearpage
-  \setcounter{page}{1}
 }
 \newcommand{\tableOfContentsAreal}{
-  \pagenumbering{roman}
   \tableofcontents
   \newpage
   \pagenumbering{arabic}
 }
 \newcommand{\bibliographyAreal}{
   \newpage
-  \addcontentsline{toc}{section}{Literaturverzeichnis}
+
+  \ifundef{\chapter}{
+    \addcontentsline{toc}{section}{Literaturverzeichnis}
+    \typeout{Bibliography now uses section heading.}
+  }{
+    \addcontentsline{toc}{chapter}{Literaturverzeichnis}
+    \typeout{Bibliography now uses chapter heading.}
+  }
+
   % gerabbrv == [1], [2], ...
   % apalike == [Autor, 1987], ...
   % alphadin == [Au87], ...
@@ -39,4 +46,3 @@
   \bibliographystyle{natdin}
   \bibliography{Bibliography}
 }
-
